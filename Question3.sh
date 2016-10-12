@@ -25,12 +25,13 @@ user3=
 		fi
 
 		clear
-
-		echo $user1$car	  Lane 1
-
-		echo $user2$car   Lane 2
-
-		echo $user3$car   Lane 3
+		printf "%55s\r" " # Lane 1 # "
+		echo  $user1$car
+  
+		printf "%55s\r" " # Lane 2 # "
+		echo  $user2$car  
+		printf "%55s\r" " # Lane 3 # "
+		echo  $user3$car   
 		
 		#PROBELM!! Lane names follow the movement of the Car! ! 
 
