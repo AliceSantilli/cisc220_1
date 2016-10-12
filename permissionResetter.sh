@@ -1,6 +1,11 @@
 #!/bin/bash
 
 #permission resetter - if user presses, s: show permissions that were changed, r: reset changed permission back to old one
+	
+	# pipe in the contents of ls -lh to another file
+	# find the difference between both files
+	# use that information in the if statements
+	# might need a for loop to go through everything
 
 	if [[ $1 == "-r" ]] ; then
 		#make some variable this = diff $2 (file) and ls -lh?
