@@ -1,0 +1,8 @@
+Assignment 1 - Due Monday October 17, 2016
+
+Julia Di Monte  - 10175838
+Bronwyn Gemmill - 10170028
+Alice Santilli  - 10178318
+
+GitHub Cloning Link:
+https://github.com/GroupABJ/cisc220_1.git
