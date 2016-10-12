@@ -1,9 +1,31 @@
 #!/bin/bash
 # Arithmetic Operation Question
 # need to add looping structure etc
-read -p "Please insert a number:" var1
-read -p "Please insert an operation:" var2
-read -p "Please insert a number:" var3
-var4=$(($var1$var2$var3))
-echo Result so far is: $var4
-~                               
+
+	read -p "Please insert a number: " var1
+
+check=1
+exit=:q
+
+	while [[ $check -eq 1 ]] ; do 
+
+		read -p "Please insert a operation: " sign 
+
+	if [[ $sign = $exit ]] ; then
+		echo Thank you for using the calculator
+		break
+	fi
+		#PROBLEM - CHECK IF INPUT SIGN IS CORRECT
+
+		read -p "please insert a number: " var2
+
+	if [[ $var2 = $exit ]] ; then
+		echo Thank you for using the calculator
+		break ; 
+	fi
+		
+		var1=$(($var1$sign$var2))
+
+		echo Result so far:  $var1
+
+	done                                
